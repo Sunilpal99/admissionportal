@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <!-- Include AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <script>
+      // Trigger modal on page load
+      window.onload = function () {
+        var myModal = new bootstrap.Modal(
+          document.getElementById("admissionOfferModal")
+        );
+        myModal.show();
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- section start -->
+    <section id="dashboard">
+      <div style="position: relative">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./image/sns-new-logo.png" alt="" class="w-50" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link "
+                    href="#"
+                    id="navbarDarkDropdownMenuLink"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Home
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                    <li><a class="dropdown-item" href="#">Desk Of Directors</a></li>
+                    <li><a class="dropdown-item" href="#">Desk Of Principal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link "
+                    href="#"
+                    id="navbarDarkDropdownMenuLink2"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    About Us
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink2"
+                  >
+                    <li><a class="dropdown-item" href="#">About</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link "
+                    href="#"
+                    id="navbarDarkDropdownMenuLink3"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Course
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink3"
+                  >
+                    <li><a class="dropdown-item" href="#">Course</a></li>
+                    <li><a class="dropdown-item" href="#">Assessments</a></li>
+                    <li><a class="dropdown-item" href="#">Inclusive Practices</a></li>
+                    <li><a class="dropdown-item" href="#">Board Results</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link "
+                    href="#"
+                    id="navbarDarkDropdownMenuLink4"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Contact Us
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink4"
+                  >
+                    <li><a class="dropdown-item" href="#">Contact Information</a></li>
+                    <li><a class="dropdown-item" href="#">Curriculum</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link "
+                    href="#"
+                    id="navbarDarkDropdownMenuLink5"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    My Account
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink5"
+                  >
+                    <li><a class="dropdown-item" href="#">Contact Information</a></li>
+                    <li><a class="dropdown-item" href="#">Curriculum</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <a href="login.html" class="btn" style="background-color: #fe6311; color: #fff" target="_blank">
+                LOGOUT
+              </a>
+              
+             
+            </div>
+          </div>
+        </nav>
+        
+     
+        <video
+          autoplay
+          muted
+          loop
+          src="/video/video1.mp4"
+          id="myVideo"
+          type="video/mp4"
+        ></video>
+        <div class="video-content">
+          <p>
+            Kids' Promising <br />
+            <span>Tomorrow</span> Ahead
+          </p>
+          <a
+            href="https://www.w3schools.com/howto/howto_css_flip_image.asp"
+            class="decorated-link text-uppercase text-decoration-none fs-6"
+            target="_blank"
+            style="color: #fff"
+          >
+            Read more
+          </a>
+        </div>
+      </div>
+
+      <!-- success -->
+      <div class="success">
+        <div class="content text-center my-2">
+          <h5 class="text-fe6311">Guaranteed Success</h5>
+          <h3 class="fw-bold lh-base fs-2">What We Offer</h3>
+          <p>
+            Teachzy offers students the best of education and entertainment
+            opportunities available in the area. We are glad to take care of
+            every student and university entrant.
+          </p>
+        </div>
+        <div class="container mb-5">
+          <div class="row justify-content-around">
+            <div class="col-md-6 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="https://static.vecteezy.com/system/resources/previews/002/563/640/non_2x/teach-school-and-education-online-learning-graduation-computer-line-style-icon-free-vector.jpg"
+                      class="card-img-top"
+                      style="width: 30%"
+                      alt="btech image"
+                    />
+                    <h5>Online Education</h5>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="flip-card-content">
+                      <h5>Online Education</h5>
+                      <p>
+                        Teachzy provides online education services with all
+                        learning materials and lectures available to you.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn"
+                        style="background-color: #fe6311; color: #fff"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="https://static.vecteezy.com/system/resources/previews/002/563/640/non_2x/teach-school-and-education-online-learning-graduation-computer-line-style-icon-free-vector.jpg"
+                      class="card-img-top"
+                      style="width: 30%"
+                      alt="btech image"
+                    />
+                    <h5>Programs & Courses</h5>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="flip-card-content">
+                      <h5>Programs & Courses</h5>
+                      <p>
+                        We offer a wide range of courses and programs that
+                        encompass lots of knowledge spheres.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn"
+                        style="background-color: #fe6311; color: #fff"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md-6 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="https://img.freepik.com/premium-vector/science-campus-icon-outline-vector-college-education-school-building_98396-54419.jpg?w=740"
+                      class="card-img-top"
+                      style="width: 30%"
+                      alt="btech image"
+                    />
+                    <h5>Campus Events</h5>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="flip-card-content">
+                      <h5>Campus Events</h5>
+                      <p>
+                        Our campus is the hub to a talented and diverse student
+                        community that turns opportunities into success.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn"
+                        style="background-color: #fe6311; color: #fff"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarePlRh1xYMJLJQRdemyydMkqNI4D_UumOcws1sHlK1HjzSnE7qNPgcs1f13A_BU9cEI&usqp=CAU"
+                      class="card-img-top"
+                      style="width: 30%"
+                      alt="btech image"
+                    />
+                    <h5>Sports & Game</h5>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="flip-card-content">
+                      <h5>Sports & Game</h5>
+                      <p>
+                        We offer a wide range of courses and programs that
+                        encompass lots of knowledge spheres.
+                      </p>
+                      <button
+                        type="button"
+                        class="btn"
+                        style="background-color: #fe6311; color: #fff"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- membership -->
+
+      <div class="membership">
+        <div class="content text-center my-2">
+          <h3 class="fw-bold lh-base fs-2">Memberships</h3>
+        </div>
+        <div class="elementor-background-overlay mb-3">
+          <div class="container">
+            <div class="grid-container">
+              <div
+                class="grid-item text-center"
+                data-aos="zoom-in-down"
+                data-aos-duration="700"
+              >
+                <img src="/image/member1.jpg" class="img-fluid" alt="Image 1" />
+              </div>
+              <div
+                class="grid-item"
+                data-aos="zoom-in-up"
+                data-aos-duration="700"
+              >
+                <img src="/image/member2.jpg" class="img-fluid" alt="Image 2" />
+              </div>
+              <div
+                class="grid-item"
+                data-aos="zoom-in-down"
+                data-aos-duration="700"
+              >
+                <img src="/image/member3.jpg" class="img-fluid" alt="Image 3" />
+              </div>
+              <div
+                class="grid-item"
+                data-aos="zoom-in-up"
+                data-aos-duration="700"
+              >
+                <img src="/image/member4.jpg" class="img-fluid" alt="Image 4" />
+              </div>
+              <div
+                class="grid-item"
+                data-aos="zoom-in-down"
+                data-aos-duration="700"
+              >
+                <img src="/image/member5.jpg" class="img-fluid" alt="Image 5" />
+              </div>
+              <div
+                class="grid-item"
+                data-aos="zoom-in-up"
+                data-aos-duration="700"
+              >
+                <img src="/image/member6.jpg" class="img-fluid" alt="Image 6" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- life at -->
+      <div class="life my-5">
+        <div class="elementor-background-overlay mb-3">
+          <div class="container">
+            <h1 class="my-5 text-white fw-bold"  data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="400"
+            data-aos-duration="400">Life @SNS</h1>
+            <p class="text-light fs-4">
+              Connect with MKSD social network for the latest from campus
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- tetstimonials -->
+      <div class="testimonials">
+        <div class="elementor-background-overlay mb-3">
+          <div class="container px-5">
+            <div class="content">
+              <h3 class="fw-bold lh-base fs-2 text-center">Testimonials</h3>
+            </div>
+            <div id="carouselExampleIndicators"class="carousel slide"data-bs-ride="carousel" >
+              <div class="carousel-indicators" style="bottom: -40px">
+                <button type="button"data-bs-target="#carouselExampleIndicators"data-bs-slide-to="0"class="active" 
+                  aria-current="true"aria-label="Slide 1"> 
+                </button>
+                <button type="button" data-bs-target="#carouselExampleIndicators"data-bs-slide-to="1" aria-label="Slide 2" ></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"aria-label="Slide 3" ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center">
+                      <img
+                        src="/image/sunil_panchmani.JPG"
+                        class="d-block rounded-circle"
+                        alt="Image 1"
+                        style="height: 150px; width: 150px"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="content">
+                        <div class="text">
+                          <p>
+                            The pedagogy, blend of technology in the education
+                            system and the zeal to bring forth the best amongst
+                            the students has made the institute stand amongst
+                            the best not only in the city but also in the
+                            country. The efforts of students in creating
+                            cognizance in society regarding various social
+                            issues related to protecting the environment,
+                            conserving heritage and other relevant issues is
+                            exemplary.
+                          </p>
+                        </div>
+                        <div class="info">
+                          <h6>Sunil Pal</h6>
+                          <span>Software Developer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center">
+                      <img
+                        src="/image/sunil im.jpg"
+                        class="d-block rounded-circle"
+                        alt="Image 2"
+                        style="height: 150px; width: 150px"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="content">
+                        <div class="text">
+                          <p>
+                            The pedagogy, blend of technology in the education
+                            system and the zeal to bring forth the best amongst
+                            the students has made the institute stand amongst
+                            the best not only in the city but also in the
+                            country. The efforts of students in creating
+                            cognizance in society regarding various social
+                            issues related to protecting the environment,
+                            conserving heritage and other relevant issues is
+                            exemplary.
+                          </p>
+                        </div>
+                        <div class="info">
+                          <h6>Sunil Pal</h6>
+                          <span>Software Developer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center">
+                      <img
+                        src="/image/sunil_panchmani.JPG"
+                        class="d-block rounded-circle"
+                        alt="Image 3"
+                        style="height: 150px; width: 150px"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="content">
+                        <div class="text">
+                          <p>
+                            The pedagogy, blend of technology in the education
+                            system and the zeal to bring forth the best amongst
+                            the students has made the institute stand amongst
+                            the best not only in the city but also in the
+                            country. The efforts of students in creating
+                            cognizance in society regarding various social
+                            issues related to protecting the environment,
+                            conserving heritage and other relevant issues is
+                            exemplary.
+                          </p>
+                        </div>
+                        <div class="info">
+                          <h6>Sunil Pal</h6>
+                          <span>Software Developer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- gallery -->
+      <div class="gallery my-5">
+        <div class="content">
+          <h3 class="fw-bold lh-base fs-2 text-center">Gallery</h3>
+        </div>
+        <div class="elementor-background-overlay mb-3">
+          <div class="container flex-container"> 
+            <div class="gallery-item geeks">
+              <img src="/image/photogallery1.jpg" class="img-fluid " alt="Image 1" />
+              <div class="middle">
+                <div class="text">Know More</div>
+              </div>
+            </div>
+            <div class="gallery-item geeks">
+              <img
+                src="/image/photogallery2.jpg" class="img-fluid"  alt="Image 2"  />
+                <div class="middle">
+                  <div class="text">Know More</div>
+                </div>
+            </div>
+            <div class="gallery-item geeks">
+              <img src="/image/photogallery3.jpg"class="img-fluid"alt="Image 3"/>
+              <div class="middle">
+                <div class="text">Know More</div>
+              </div>
+            </div>
+            <div class="gallery-item geeks">
+              <img  src="/image/photogallery4.jpg"class="img-fluid" alt="Image 4"/>
+              <div class="middle">
+                <div class="text">Know More</div>
+              </div>
+            </div>
+            <div class="gallery-item geeks">
+              <img src="/image/photogallery5.jpg" class="img-fluid" alt="Image 5"/>
+              <div class="middle">
+                <div class="text">Know More</div>
+              </div>
+            </div>
+            <div class="gallery-item geeks">
+              <img src="/image/photogallery6.jpg" class="img-fluid" alt="Image 6"/>
+              <div class="middle">
+                <div class="text">Know More</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="elementor-background-overlay">
+          <footer class=" ">
+            <div class="container py-4">
+              <div class="row">
+                <div class="col-md-3">
+                  <h5 class="mb-3">Get in touch</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="tel:0000000000" class="no-decoration text-muted">9516667268</a></li>
+                    <li><a href="mailto:xyz@gmail.com" class=" no-decoration text-muted">sunilpal05399@gmail.com</a> </li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="mb-3">About</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted no-decoration">About Us</a></li>
+                    <li><a href="#" class="text-muted no-decoration">Awards &amp; Recognitions</a></li>
+                    <li><a href="#" class="text-muted no-decoration">Student Achievement</a></li>
+                    <li><a href="#" class="text-muted no-decoration">Upcoming Events</a></li>
+                    <li><a href="#" class="text-muted no-decoration">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="mb-3">Section</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted no-decoration">Circulars &amp; Notices</a></li>
+                    <li><a href="#" class="text-muted no-decoration">Transfer Certificates</a></li>
+                    <li><a href="#" class="text-muted no-decoration">Fee Structure</a></li>
+                    <li><a href="#" class="text-muted no-decoration">Activity Integration</a></li>
+                    <li><a href="#" class="text-muted no-decoration">Track Your Bus</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h5 class="mb-3">Follow Us</h5>
+                  <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="text-muted fab fa-twitter"></i></a>
+                    </li><li class="list-inline-item"><a href="#"><i class="text-muted fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="text-muted fab fa-facebook"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <p class="text-muted" style="text-align: center; font-weight: bold;">© 2024 Company, Inc. All rights reserved.</p></div></div></footer></div></div>      <!-- Modal for School Admission Offer -->
+      <div class="modal fade" id="admissionOfferModal" tabindex="-1" aria-labelledby="admissionOfferModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="admissionOfferModalLabel">
+                School Admission Offer
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"  aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-center">
+                <img
+                  src="./image/admission_open6.png"alt="School Logo"class="img-fluid mb-3"/>
+              </div>
+              <p>
+                Congratulations! We are pleased to offer you admission too
+                <a href="" class="fw-bold" style="color: #fe6311; 
+                cursor: pointer; text-decoration: none;" id="addressTrigger">SNS School</a > for the upcoming academic year.
+              </p>
+              <p>
+                This offer is valid until 02-30-2024. Please review the
+                admission details and requirements provided in the attached
+                documents.
+              </p>
+              <p>
+                If you have any questions or need further assistance, please
+                feel free to contact us at <a href="tel:9516667268" style="text-decoration: none; color: #fd955e;font-weight: bold; ">9516667268</a>.
+              </p>
+              <p>We look forward to welcoming you to our school community!</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button" class="btn btn-secondary" data-bs-dismiss="modal">  Close
+              </button>
+              <button  type="button" class="btn" style="background-color: #fe6311"  >
+                <a href="./registration.html" target="_blank"  style="color: #fff; text-decoration: none">Accept Offer</a  >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section end -->
+    <!-- Scroll to top button -->
+    <button id="scrollToTop" class="btn">
+      <i
+        class="fa fa-angle-double-up"
+        style="font-size: 14px; padding: 8px"
+      ></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Enable smooth scrolling behavior
+        });
+      }
+
+      // Add event listener to the scroll icon after the DOM has loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("scrollToTop")
+          .addEventListener("click", scrollToTop);
+      });
+
+
+
+// Event listener for the span tag
+document.getElementById('addressTrigger').addEventListener('click', function() {
+    window.open('https://maps.app.goo.gl/9vsMJhLWK5mjyNqr6');
+});
+      
+    </script>
+  </body>
+</html>
