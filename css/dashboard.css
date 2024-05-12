@@ -206,15 +206,11 @@ nav {
     .gallery-item:hover .middle {
     opacity: 1;
     }
-
+/* 
     .gallery .text {
-    background-color:#fd955e;
-    color: #fff;
-    padding: 10px 20px;
     border-radius: 5px; 
     cursor: pointer;
-    /* margin: 0 0 25px 0; */
-    }
+    } */
 
 
     .flex-container {
